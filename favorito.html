@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/favorito.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Filmography</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img class="logo" src="./img/logolisa.png" ></a>
+        <nav>
+            <ul class="menu">
+                    <li><a href="recomenda.html">Recomendação</a></li>
+                <li><a href="filmo.html">Lançamentos / Mais Vistos</a></li>
+                <li><a href="generos.html">Gêneros</a></li>
+                <li><a href="favorito.html">Favoritos</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Filmography/banco/index.php">
+                    <button type="button" class="botaom" data-toggle="modal" data-target="#exampleModal"
+                        data-whatever="">Login</button>
+                    </a>
+                    <a href="../Filmography/banco/cadastrar.php">
+                <button type="button" class="botaom" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="">Cadastrar</button>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <!--Entada do Modal deve vir ao final do site-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Email</label>
+                            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png"
+                                id="olho" class="olho">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Senha:</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Senha">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="botaomf" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="corpo">
+        <h1>RECOMENDAÇÕES DE FILMES DE TODOS OS TIPOS</h1><br>
+
+
+<section id="favoriteMovies" class="row">
+
+</section>
+
+
+
+<footer class="rodape">
+    <div class="footer">
+        <a class="logo-rodape">
+            <img src="img/logolisa.png" class="logo" alt="Filmography">
+        </a>
+    </div>
+    </div>
+    <div class="textos">
+        <p>Termos de uso</p>
+        <p>Política de Privacidade</p>
+    </div>
+</footer>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./js/popper.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/entrada.js"></script>
+<script src="./js/favorito.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filmography - Guerra</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="fundo">
+    <header class="header">
+        <a href="../index.html"><img class="logo" src="../img/logolisa.png"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="../filmo.html">Lançamentos / Mais Vistos</a></li>
+                <li><a href="../generos.html">Gêneros</a></li>
+                <li><a href="../favorito.html">Favoritos</a></li>
+
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../banco/index.php">
+                        <button type="button" class="botaom" data-toggle="modal" data-target="#exampleModal"
+                            data-whatever="">Login</button>
+                    </a>
+                    <a href="../banco/cadastrar.php">
+                        <button type="button" class="botaom" data-toggle="modal" data-target="#exampleModal"
+                            data-whatever="">Cadastrar</button>
+                    </a>
+            </ul>
+        </nav>
+    </header>
+    <!--Entada do Modal deve vir ao final do site-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Email</label>
+                            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png"
+                                id="olho" class="olho">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Senha:</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Senha">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="botaomf" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="corpo">
+        <h1>GUERRA</h1><br>
+
+
+        <div class="container">
+            <div id="guerra" class="row"></div>
+        </div>
+
+
+        <!--Entrada do Rodapé do Site-->
+        <div class="rodape">
+            <footer>
+                <div class="footer">
+                    <a class="logo-rodape">
+                        <img src="../img/logolisa.png" class="logo" alt="Filmography">
+                    </a>
+                </div>
+                <div class="textos">
+                    <p>Termos de uso</p>
+                    <p>Política de Privacidade</p>
+                </div>
+            </footer>
+        </div>
+
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        window.onload = function getGeneros() {
+            axios.get('https://api.themoviedb.org/3/discover/movie?api_key=b6aa9e3a5640442db50f18523bfcb52a&with_genres=10752&without_genres=16%2C28%2C12%2C35%2C80%2C99%2C18%2C10751%2C36%2C27%2C10402%2C9648%2C10749%2C14%2C10770%2C53%2C878%2C37')
+                .then((response) => {
+                    console.log(response.data.results);
+                    let generos = response.data.results;
+                    let output = '';
+                    $.each(generos, (index, val) => {
+                        console.log(val);
+                        output += `
+          <div class="col-10 col-sm-5 col-lg-3">
+          <div class="row">                   
+              <div class="well text-center">
+                  <img alt="poster" class="poster" src='https://image.tmdb.org/t/p/w185${val.poster_path}'/>
+              </div>
+          </div>                  
+          <div class="row">
+              <h5>${val.title}</h5>
+          </div>
+          <div class="row">
+          <h6>${val.release_date}</h6>
+          </div>
+          <div class="row">
+                <a onclick="favoritar('${val.id}')" class="btn btn-primary" href="#">Favoritar</a>
+              <a onclick="movieSelected('${val.id}')" class="btn btn-primary"  href="https://www.themoviedb.org/movie/${val.id}" target="blank">Mais informações</a>
+          </div>                  
+      </div>
+          `;
+                    });
+
+                    $('#guerra').html(output);
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
+        }
+    </script>
+</body>
+</div>
+
+</html>

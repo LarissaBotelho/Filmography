@@ -1,0 +1,269 @@
+/*Padrão do Site*/
+body {
+    background-image: url(../img/fundo2.jpeg);
+    background-size:100%;
+    background-attachment:fixed;
+}
+
+/*Dimensãoes do Site*/
+body,
+ul, 
+li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none; /*para retirada do sublinhado*/
+    color: #2A9FD6;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/*Entrada do componente header*/
+.header{
+    display: flex;
+    flex-wrap: wrap;/*uma parte do flex box desce*/
+    justify-content: space-between; /*espaço entre os itens*/
+    padding: 20px;
+    align-items: center;/*Alinhamento dos itens*/
+}
+
+.logo{
+    width: 50%;
+    height: auto;
+}
+
+.menu{
+    margin-right: 150px;
+}
+
+.menu, .logreg{
+    display: flex;
+}
+
+.menu li, .logreg li{
+    margin-left: 20px;
+}
+
+.menu li a, .logreg li a{
+    display: block;
+    padding: 5px;
+    color: rgb(100, 155, 187);
+}
+
+/*Botões do Header*/
+.logreg a{
+    font: normal 14px Arial;
+}
+
+.botaos {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px;
+	background-color:transparent;
+	-webkit-border-top-left-radius:37px;
+	-moz-border-radius-topleft:37px;
+	border-top-left-radius:37px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:37px;
+	-moz-border-radius-bottomright:37px;
+	border-bottom-right-radius:37px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid rgb(100, 155, 187);
+    display:inline-block;
+    font: 16px Arial;
+	color:rgb(100, 155, 187);
+	height:26px;
+	line-height:30px;
+    width:180px;
+    position: relative;
+	text-align:center;
+}.botaos:active {
+	position:relative;
+	top:1px;
+}
+
+/*Entrada do Footer*/
+footer{
+    position: relative;
+    font: bold 15px Arial;
+    color: white;
+  }
+
+.logo-rodape img{
+    width: 15%;
+    height: auto;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    /*background: #3B5998;*/
+    color: black;
+    /* color: #3B5998; */
+  }
+
+  .fa-twitter {
+    /*background: #55ACEE;*/
+    color: #55ACEE;
+  }
+
+  .fa-instagram {
+  /*background: #125688;*/
+  color: #125688;
+}
+
+.textos{
+    font: normal 12px Arial;
+    color:rgba(255, 255, 255, .7);
+    text-align: center;
+}
+
+/*Entrada do Modal*/
+.col-form-label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 8px;
+    border-radius: 1px;
+    border-color: rgba(100, 155, 187, .9);
+    width: 300px;
+}
+
+.botaom{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgba(100, 155, 187, .9);
+    border-radius: 12px 3px;
+    width: 110px;
+    height: 27px;
+    margin-top: 6px;
+    margin-left: 10px;
+    top: 15px;
+}
+.botaomf{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgba(100, 155, 187, .9);
+    border-radius: 10px;
+}
+
+.modal-content{
+    width: 50%;
+    position: fixed; /*para ficar em cima do site inteiro*/
+    z-index: 2000;/*garante que fique por cima de todos os itens*/
+    display: none;
+    justify-content: center; /*alinhamento na horizontal*/
+    align-items: center;/*alinhamento na vertical*/
+}
+
+/*Estilizando a SENHA*/
+#senha, #senha1, #senha2{
+    width: 150px;
+    padding-right: 20px;
+}
+  
+.olho{
+    cursor: pointer;
+    color: black;
+    left: 180px;
+    top: 170px;
+    position: absolute;
+    width: 20px;
+ }
+
+ /*Entrada do Estilo de Busca*/
+ .corpo h1{
+    font: bold 20px arial;
+    color: white;
+    text-align: center;
+    max-width:100%;
+    margin-top: 20px;
+}
+
+.buscar input{
+    font: normal 14px Arial;
+    text-align: center;
+    color: white;
+    width: 30%;
+    height: auto;
+    padding: 0.5%;
+    margin-left: 35%;
+    margin-right: auto;
+    border-radius: 15%;
+    border-color: rgb(100, 155, 187);
+    background: black;
+    position: relative; top: auto;
+    /*opacity: 0.5; DEIXAR AS MENINAS VEREM A QUESTÃO DA OPACIDADE*/
+}
+
+/*Estilização do CARD*/
+
+.row{
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.poster{
+    width: 150px;
+    height: 250px;
+    border:4px solid #fff !important;
+}
+
+.row h5{
+    color: white;
+    font: bold 14px Arial;
+    margin-top: 5px;
+}
+.row h6{
+    color: white;
+    font: bold 14px Arial;
+    margin-top: 5px;
+}
+
+
+.btn-primary{
+    font: bold 12px Arial;
+    text-align: center;
+    color: white;
+    background-color: rgb(100, 155, 187) !important;
+    border-color: rgb(100, 155, 187) !important;
+    margin: 20px;
+}
+
+/*ESTILO DO RODAPÉ*/
+
+footer{
+    position: relative;
+    font: bold 15px Arial;
+    color: white;
+  }
+
+.logo-rodape img{
+    width: 8%;
+    height: auto;
+    padding: 20px;
+}
+

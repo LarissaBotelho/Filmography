@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Filmography</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img class="logo" src="./img/logolisa.png" ></a>
+        <nav>
+            <ul class="menu">
+                    <li><a href="recomenda.html">Recomendação</a></li>
+                <li><a href="filmo.html">Lançamentos / Mais Vistos</a></li>
+                <li><a href="generos.html">Gêneros</a></li>
+                <li><a href="favorito.html">Favoritos</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Filmography/banco/index.php">
+                    <button type="button" class="botaom" data-toggle="modal" data-target="#exampleModal"
+                        data-whatever="">Login</button>
+                    </a>
+                    <a href="../Filmography/banco/cadastrar.php">
+                    <button type="button" class="botaom" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="">Cadastrar</button>
+                    </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="corpo">
+        <h1>RECOMENDAÇÕES DE FILMES DE TODOS OS TIPOS</h1><br>
+        <div class="buscar">
+            <form id="searchForm">
+                <input type="text" id="searchText" placeholder="Pesquise por título...">
+            </form>
+        </div>
+
+    <div class="container">
+        <div id="movies" class="row">
+
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="footer">
+            <a class="logo-rodape">
+                <img src="img/logolisa.png" class="logo" alt="Filmography">
+            </a>
+        </div>
+        </div>
+        <div class="textos">
+            <p>Termos de uso</p>
+            <p>Política de Privacidade</p>
+        </div>
+    </footer>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/entrada.js"></script>
+</body>
+
+</html>

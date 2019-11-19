@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filmography</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css'>
+    <link rel="stylesheet" href="./css/filmo.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img class="logo" src="./img/logolisa.png"></a>
+        <nav>
+            <ul class="menu">
+                    <li><a href="recomenda.html">Recomendação</a></li>
+                <li><a href="filmo.html">Lançamentos / Mais Vistos</a></li>
+                <li><a href="favorito.html">Favoritos</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Filmography/banco/index.php">
+                    <button type="button" class="botaom" data-toggle="modal" data-target="#exampleModal"
+                        data-whatever="">Login</button>
+                    </a>
+                    <a href="../Filmography/banco/cadastrar.php">
+                <button type="button" class="botaom" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="">Cadastrar</button>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <!--Entada do Modal deve vir ao final do site-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Email</label>
+                            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png"
+                                id="olho" class="olho">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Senha:</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Senha">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="botaomf" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="corpo">
+        <h1>RECOMENDAÇÕES DE FILMES DE TODOS OS TIPOS</h1><br>
+        
+
+        <!--Entrada dos filmes da barra de pesquisa-->
+        <div class="container">
+            <div id="movies" class="row">
+
+            </div>
+        </div>
+
+        <!-- Entrada do Gênero no Site -->
+        <section class="painel genero">
+            <h3 id="titulo">Gêneros</h3>
+            <ol>
+                <li>
+                    <figure class="foto-legenda">
+                        <img src="http://br.web.img3.acsta.net/r_1920_1080/pictures/19/04/08/09/28/2382022.jpg">
+                        <figcaption>
+                            <h3 id="titulo">AÇÃO</h3>
+                            <a href="./generos html/acao.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img src="http://br.web.img2.acsta.net/pictures/19/05/17/09/30/3447200.jpg">
+                        <figcaption>
+                            <h3 id="titulo">AVENTURA</h3>
+                            <a href="./generos html/aventura.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSVkvY2gc4fyyea4JywiEg2wctT_021r3882nEJxrlNFroS26X">
+                        <figcaption>
+                            <h3 id="titulo">ANIMAÇÃO</h3>
+                            <a href="./generos html/animacao.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://assets.filmladder.nl/uploads/depot_image/asset/000/940/867/940867/medium_c5b9b8aba7b78694.jpg">
+                        <figcaption>
+                            <h3 id="titulo">COMÉDIA</h3>
+                            <a href="./generos html/comedia.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img src="http://br.web.img2.acsta.net/r_1920_1080/pictures/19/08/25/11/06/3898399.jpg">
+                        <figcaption>
+                            <h3 id="titulo">CRIME</h3>
+                            <a href="./generos html/crime.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img src="https://cdn.themovieseries.net/cover/tell-me-who-i-am.png">
+                        <figcaption>
+                            <h3 id="titulo">DOCUMENTARIO</h3>
+                            <a href="./generos html/documentario.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img src="https://image.tmdb.org/t/p/original//ygUsgb6WSTZ4iyZJXpjswgngqBY.jpg">
+                        <figcaption>
+                            <h3 id="titulo">DRAMA</h3>
+                            <a href="./generos html/drama.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <!--Link na logo até aqui-->
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLGm2pF0AMZOJWygvj7fk8vh61lOdi9W7yiLeKY4o7GN-Fo1ae">
+                        <figcaption>
+                            <h3 id="titulo">FAMÍLIA</h3>
+                            <a href="./generos html/familia.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCeUftIt8C3xFgXVuqcnJym417EmR1MnigDuxq--7PODi9OpR0">
+                        <figcaption>
+                            <h3 id="titulo">FANTASIA</h3>
+                            <a href="./generos html/fantasia.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSUvHfCcfYwqA6FkoNB0AIXrtNN4W-Y-VtI-1FZmZ4dO64y30ZH">
+                        <figcaption>
+                            <h3 id="titulo">HISTÓRIA</h3>
+                            <a href="./generos html/historia.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://m.media-amazon.com/images/M/MV5BM2NhZDkwMzktNjIzNy00NTBjLWJhYzQtNDQyN2I0NzQ4NDVjXkEyXkFqcGdeQXVyNTEyMDE1MTE@._V1_.jpg">
+                        <figcaption>
+                            <h3 id="titulo">TERROR</h3>
+                            <a href="./generos html/terror.html">
+                                <p class="botao1">Assita mais</div>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://pressfrom.info/upload/images/real/2019/09/16/sombra-lunar-suspense-sci-fi-estrelado-por-astro-de-narcos-ganha-trailer-legendado__287957_.jpg?content=1">
+                        <figcaption>
+                            <h3 id="titulo">MISTÉRIO</h3>
+                            <a href="./generos html/mistério.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQza3XlX_L3fX7EKKmcOx6tfDELbL28bd9-8GEvR5aIhEmnsJs8">
+                        <figcaption>
+                            <h3 id="titulo">MÚSICA</h3>
+                            <a href="./generos html/musica.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTiDk8ISMLpdQWN92ye39iHWV9O_aLTk79KJ3gpldiPkz6B42tH">
+                        <figcaption>
+                            <h3 id="titulo">ROMANCE</h3>
+                            <a href="./generos html/romance.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSB6F5PpcfJdBq9GtGDt4e1as-akNPD_NDfsTXBN0xLswEybrUK">
+                        <figcaption>
+                            <h3 id="titulo">FICÇÃO CIENTÍFICA</h3>
+                            <a href="./generos html/ficcao.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBqNod98Q4mTymWzOzuv4haPsaJFfLO63YT1dLkd9x7CHtPZBZ">
+                        <figcaption>
+                            <h3 id="titulo">THRILLER</h3>
+                            <a href="./generos html/thriller.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSsbyksNYnm4ZzlV2oPLMXSrrdHH5GufvcAgpvJygbNk7p-Xd-X">
+                        <figcaption>
+                            <h3 id="titulo">GUERRA</h3>
+                            <a href="./generos html/guerra.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="foto-legenda">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSOQZR9YXBWg9G-iZnL3QNJnVaurBDBHv19Z9MDYdaJXzFkxzXM">
+                        <figcaption>
+                            <h3 id="titulo">WSTERN</h3>
+                            <a href="./generos html/wstern.html">
+                                <p class="botao1">Assita mais
+                            </a></div>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ol>
+        </section>
+    </main>
+    <!--Entrada do Rodapé do Site-->
+    <div class="rodape">
+        <footer class="rodape">
+            <div class="footer">
+                <a class="logo-rodape">
+                    <img src="img/logolisa.png" class="logo" alt="Filmography">
+                </a>
+            </div>
+            </div>
+            <div class="textos">
+                <p>Termos de uso</p>
+                <p>Política de Privacidade</p>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
+    
+
+</body>
+
+</html>

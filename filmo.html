@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filmography</title>
+    <link rel="stylesheet" href="./css/filmo.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css'>
+    
+    
+    
+</head>
+
+<body>
+    <!--Entrada do Cabeçalho do Site -->
+    <header class="header">
+        <a href="index.html"><img class="logo" src="./img/logolisa.png"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="recomenda.html">Recomendação</a></li>
+                <li><a href="generos.html">Gêneros</a></li>
+                <li><a href="favorito.html">Favoritos</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Filmography/banco/index.php">
+                    <button type="button" class="botaom" data-toggle="modal" data-target="#exampleModal"
+                        data-whatever="">Login</button>
+                    </a>
+                    <a href="../Filmography/banco/cadastrar.php">
+                <button type="button" class="botaom" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="">Cadastrar</button>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <!--Entada do Modal deve vir ao final do site-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Email</label>
+                            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png"
+                                id="olho" class="olho">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Senha:</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Senha">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="botaomf" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Entrada do Corpo do Site -->
+    <main class="corpo">
+        <h1>RECOMENDAÇÕES DE FILMES DE TODOS OS TIPOS</h1><br>
+
+        <!--Container Lançamentos-->
+        <section class="painel lançamentos">
+                <h3 id="titulo">Lançamentos</h3>
+                <div class="carousel">
+                    <div class="grow">
+                        <figure><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1kgtSGqkyEX3NhGCusj_lT6dXYrTjXAh_Ek00ZB1usEqA0lcD"
+                                alt="Coringa" /></figure>
+                    </div>
+                    <div class="grow">
+                        <figure><img
+                                src="http://t3.gstatic.com/images?q=tbn:ANd9GcRUp-puXRj9bnbbXrgFjTz-iqLLBQrubq0yXjHvO1zjp8ELFOQ0"
+                                alt="IT 2" /></figure>
+                    </div>
+                    <div class="grow">
+                        <figure><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-nrDvBdD1bZHqqWBXhalI-QpmXbeMKMwh5idiSHhtWek8z2Xq"
+                                alt="Projeto Gemini"></figure>
+                    </div>
+                    <div class="grow">
+                        <figure><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQCs1JLktUwdbDV0psG7lBzKr_Olx-p5YLlp0ygHrJVqfjzbj1o"
+                                alt="Toy Story 4"></figure>
+                    </div>
+                    <div class="grow">
+                        <figure><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTl9pyKf6YIZazbITCeAa87yekAE9F5Apuyv3yr9DH7CYwsPtvA"
+                                alt="Rei Leão"></figure>
+                    </div>
+                    <div class="grow">
+                        <figure><img src="https://s.aficionados.com.br/imagens/image-1164_cke.jpg" alt="Malevola"></figure>
+                    </div>
+                    <div class="grow">
+                        <figure><img
+                                src="https://razaodeaspecto.com/wp-content/uploads/2019/06/78vi3J8zLJVoOXo7RD91lyGufWB.jpg"
+                                alt="Ma">
+                        </figure>
+                    </div>
+                    <div class="grow">
+                        <figure><img
+                                src="https://media.fstatic.com/xkpugo2YsktfUDr199OQDr1wAuU=/fit-in/290x478/smart/media/movies/covers/2019/09/1_image004-2.jpg"
+                                alt="Contato Viseral">
+                        </figure>
+                    </div>
+                    <div class="grow">
+                        <figure><img
+                                src="https://i0.wp.com/pipocamoderna.com.br/wp-content/uploads/2019/06/annabelle_comes_home_ver4_xlg.jpg"
+                                alt="Annabelle 3">
+                        </figure>
+                    </div>
+                    <div class="grow">
+                        <figure><img src="https://images-na.ssl-images-amazon.com/images/I/51wpBYYJdGL.jpg" alt="Shazam">
+                        </figure>
+                    </div>
+                    <div class="grow">
+                        <figure><img
+                                src="https://cdn.fstatic.com/media/movies/covers/2019/05/yYWGCAerbVAHyfuGBCHKzWJdEtj.jpg"
+                                alt="Alladin">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- Entrada dos mais vistos-->
+    
+            <section class="painel maisvistos">
+                <h3 id="titulo">Mais Vistos</h3>
+                <div class="carousel">
+                    <div class="grow">
+                        <figure>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWMBx2-A4cUZJIPd6ztciUJyrQ588PrVN4VjqSnIK6ZqvCih6d"
+                                alt="Fenix Negra" />
+                        </figure>
+                    </div>
+                    <div class="grow">
+                        <figure>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQOz5OW8mzt5EvwU7XAqzTNFnZz6wj_9two-9mmW1rz3qLKb5Ms"
+                                alt="Vingadores" />
+                        </figure>
+                    </div>
+                    <div class="grow">
+                        <figure>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjSw7JYR8tdgMss1RNgm9EQm5oMGuEo1K6gO267r2aVAGqObIa"
+                                alt="Homem-Aranha">
+                        </figure>
+                    </div>
+                    <div class="grow">
+                        <figure>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSueU76d4KUKTpOllN1RXu708J1S6bkYZHGckKvNh-fNt0abdIi"
+                                alt="MIB">
+                        </figure>
+                    </div>
+                    <div class="grow">
+                        <figure>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR2K82K3wUca3eCCfggc88CdC3SXLN3sPSI_fjXpFR2aG2LFmna"
+                                alt="Rambo">
+                        </figure>
+                    </div>
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQPTetR6gtVjd9DtkN8lUIb2BOgmIyTo79Zqc8sgETMWg-F-MB"
+                            alt="As Panteras">
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <!--Entrada do Rodapé do Site-->
+            
+<footer class="rodape">
+        <div class="footer">
+            <a class="logo-rodape">
+                <img src="img/logolisa.png" class="logo" alt="Filmography">
+            </a>
+        </div>
+        </div>
+        <div class="textos">
+            <p>Termos de uso</p>
+            <p>Política de Privacidade</p>
+        </div>
+    </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="./js/filmo.js"></script>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+        <script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js'></script>
+        <script src="js/filmo.js"></script>
+    
+    </body>
+    
+    </html>
